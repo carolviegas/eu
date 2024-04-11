@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+}
+
+.sobre-mim-imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria article {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+    section {
+        margin: 20px 10px; /* Adiciona uma pequena margem nas laterais em telas pequenas */
+    } 
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .sobre-mim-imagem {
+        display: block;
+        margin: auto;
+    }
+
+    .sobre-mim-texto, .galeria {
+        flex-direction: column;
+    }
+}
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+    align-self: center;
+}
+
+
+
+
+.social-links img {
+    margin-bottom: 8px; /* Espaço entre a imagem e o texto */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+#introducao {
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 40px auto; /* Aumenta a margem superior e inferior e centraliza horizontalmente */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+#introducao h1 {
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+#introducao p {
+    font-size: 1.5rem; /* Tamanho maior para o parágrafo */
+}
+.section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* ... estilos existentes ... */
+
+.skills-container, .hobbies-container, .formacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.skill-item, .hobby-item, .formacao-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Largura de cada item */
+}
+
+.skill-icon, .hobby-icon, .formacao-icon {
+    width: 100px; /* Largura dos ícones */
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Responsividade: em telas menores, cada item ocupa mais espaço */
+@media (max-width: 768px) {
+    .skill-item, .hobby-item, .formacao-item {
+        width: calc(50% - 20px); /* Metade da largura, menos o gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item, .hobby-item, .formacao-item {
+        width: 100%; /* Largura total em telas muito pequenas */
+    }
+}
+/* Estilo para centralizar e limitar a largura do conteúdo das seções */
+.centered-section {
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 20px auto; /* Margem automática para centralizar */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Estilo para os itens dentro das seções centralizadas */
+.centered-section .item-container {
+    display: flex;
+    justify-content: center; /* Itens centralizados horizontalmente */
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.centered-section .item {
+    /* Estilo para cada item individual (habilidade, hobby, formação) */
+    width: 150px; /* Ajuste conforme necessário */
+    margin: 10px;
+    text-align: center;
+}
+
+.centered-section img {
+    /* Estilo para as imagens dos itens */
+    width: 80px; /* ou o tamanho que você preferir para os logos */
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* ... outros estilos ... */
+
+/* Aplicando os estilos aos elementos de seção no HTML */
+#skills, #hobbies, #formacao {
+    /* Essas três seções herdarão os estilos de .centered-section */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px; /* Define uma altura padrão para todos os skill-item */
+    justify-content: space-between; /* Espaçamento uniforme dentro do item */
+}
+
+.skill-icon {
+    width: 80px; /* ou o tamanho desejado para as imagens */
+    height: auto;
+}
+
+.skill-item h3 {
+    margin: 5px 0; /* Espaço reduzido acima e abaixo do título */
+}
+
+.imagem-projeto {
+    width: auto; /* ou uma largura específica, como 300px */
+    max-width: 100%; /* garante que a imagem seja responsiva e não ultrapasse a largura do contêiner */
+    height: auto; /* mantém a proporção da imagem */
+}
+.social-links {
+    display: flex; /* Disponibiliza os links lado a lado */
+    justify-content: center; /* Centraliza os links no container */
+    align-items: center; /* Alinha os links verticalmente */
+    gap: 20px; /* Espaço entre cada link */
+    text-align: center; /* Centraliza o texto abaixo de cada logo */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links img {
+    margin-bottom: 8px; /* Espaço entre a imagem e o texto */
+}
+
+.sobre-mim-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-mim-imagem {
+    border-radius: 50%;
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sobre-mim-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* ajuste o espaçamento conforme necessário */
+    margin-top: 20px; /* espaço acima do contêiner das redes sociais */
+}
+
+/* Para os ícones */
+.sobre-mim-redes-sociais a {
+    display: inline-block; /* ou 'block' se você quiser que eles tenham uma linha própria */
+    text-decoration: none; /* remove o sublinhado dos links */
+}
+
+/* Para os ícones dentro dos links */
+.sobre-mim-redes-sociais img {
+    width: 24px; /* ou o tamanho que você deseja */
+    height: auto;
+}
+
+
+/* Para manter a seção responsiva */
+@media (max-width: 768px) {
+    .sobre-mim-conteudo {
+        flex-direction: column;
+    }
+}
+
+
+/* Ajustes para a responsividade ou outros estilos podem ser necessários */
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #e5d3ed;
+  }
+  
+  a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #e5d3ed;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
