@@ -361,4 +361,15 @@ a {
     visibility: visible;
     transform: scaleX(1);
   }
+img {
+  max-width: 100%; /* Isso garante que a imagem seja responsiva e não exceda a largura do seu contêiner */
+  height: auto; /* Isso mantém a proporção da imagem intacta */
+}
+
+/* Para os ícones das redes sociais, você pode querer uma largura específica */
+.social-icon {
+  width: 50px; /* ou qualquer outro tamanho que prefira */
+  height: auto;
+}
+
   
